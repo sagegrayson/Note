@@ -4,6 +4,18 @@ const { User, Post, Instrument, Genre } = require("../models");
 const withAuth = require("../utils/auth.js");
 
 router.get("/", async (req, res) => {
+  res.send("this will be the landing route");
+  //   try {
+  //     res.render("homepage", {
+  //       loggedIn: req.session.loggedIn,
+  //     });
+  //   } catch (err) {
+  //     console.log(err);
+  //     res.status(500).json(err);
+  //   }
+  //landpage
+});
+router.get("/home", async (req, res) => {
   res.send("this will be the homepage route");
   //   try {
   //     res.render("homepage", {
@@ -13,6 +25,7 @@ router.get("/", async (req, res) => {
   //     console.log(err);
   //     res.status(500).json(err);
   //   }
+  //landpage
 });
 
 router.get("/genre/:id", withAuth, async (req, res) => {
