@@ -16,14 +16,20 @@ Genre.init({
   },
   user_id: {
     type: DataTypes.INTEGER,
+    allowNull: true,
     references: {
       model: "user",
       key: "id",
     },
     allowNull: true,
   },
+  sequelize,
+  timestamps: false,
+  freezeTableName: true,
+  underscored: true,
+  modelName: "genre",
 });
-
+module.exports = Genre;
 //genre
 //genre id
 //genre name

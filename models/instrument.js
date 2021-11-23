@@ -22,4 +22,10 @@ Instrument.init({
       key: "id",
     },
   },
+  sequelize,
+  timestamps: false,
+  freezeTableName: true,
+  underscored: true,
+  modelName: "instrument",
 });
+module.exports = Instrument;
