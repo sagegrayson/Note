@@ -28,3 +28,4 @@ Instrument.init({
   underscored: true,
   modelName: "instrument",
 });
+module.exports = Instrument;

@@ -16,6 +16,7 @@ Genre.init({
   },
   user_id: {
     type: DataTypes.INTEGER,
+    allowNull: true,
     references: {
       model: "user",
       key: "id",
@@ -27,7 +28,7 @@ Genre.init({
   underscored: true,
   modelName: "genre",
 });
-
+module.exports = Genre;
 //genre
 //genre id
 //genre name

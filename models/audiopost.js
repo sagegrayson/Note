@@ -36,3 +36,4 @@ Post.init({
   underscored: true,
   modelName: "audiopost",
 });
+module.exports = Audiopost;
