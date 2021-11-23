@@ -10,7 +10,7 @@ Genre.init({
     primaryKey: true,
     autoIncrement: true,
   },
-  Genre_name: {
+  genre_name: {
     type: DataTypes.BLOB,
     allowNull: false,
   },
@@ -20,6 +20,7 @@ Genre.init({
       model: "user",
       key: "id",
     },
+    allowNull: true,
   },
 });
 
