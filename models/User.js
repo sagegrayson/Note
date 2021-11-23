@@ -43,13 +43,7 @@ User.init(
         key: "id",
       },
     },
-    genre_id: {
-      type: DataTypes.INTEGER,
-      references: {
-        model: "genre",
-        key: "id",
-      },
-    },
+
     friendship_id: {
       type: DataTypes.INTEGER,
       allowNull: true,
