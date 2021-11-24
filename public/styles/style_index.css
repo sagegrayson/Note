@@ -31,7 +31,7 @@ body {
   margin: 5px;
   color: var(--Dark) !important;
   background-color: var(--Light) !important;
-  border: 2px solid var(--Dark) !important;
+  border: 2px solid var(--Blue) !important;
 }
 
 .btn:hover {
@@ -48,11 +48,17 @@ body {
   color: var(--light) !important;
   background-color: var(--Red) !important;
   border-color: var(--Light) !important;
-  border: 2px solid var(--Dark) !important;
+  border: 2px solid var(--Light) !important;
 }
 
 #plus_btn {
   font-size: 30px;
+}
+
+.btn_txt {
+  justify-content: center;
+  align-content: center;
+  font-size: 12px;
 }
 
 header {
@@ -70,8 +76,35 @@ h1 {
 
 .content {
   background-color: var(--Navy) !important;
-  left: 80px;
-  top: -710px;
-  height: 710px;
-  width: 648px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  top: -635px;
+  z-index: -1;
+  height: 100vh;
+}
+
+.reg_c_box {
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  height: 40vh;
+  width: 20vw;
+}
+
+.big_c_box {
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  height: 60vh;
+  width: 20vw;
+}
+
+.small_c_box {
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  height: 20vh;
+  width: 20vw;
 }
