@@ -117,7 +117,7 @@ h1 {
   display: flex;
   position: relative;
   bottom: 800px;
-  left: 400px;
+  left: 50%;
 }
 
 .post {
