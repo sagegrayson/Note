@@ -9,6 +9,7 @@
 
 body {
   font-family: "Courier New", Courier, monospace;
+  height: 100vh !important;
 }
 
 #side_bar {
@@ -23,6 +24,7 @@ body {
 }
 
 .btn {
+  text-align: center !important;
   position: relative;
   left: -10px;
   border-radius: 30px !important;
@@ -40,6 +42,7 @@ body {
 }
 
 #active_btn {
+  text-align: center !important;
   left: -10px;
   border-radius: 30px !important;
   height: 60px;
@@ -56,9 +59,10 @@ body {
 }
 
 .btn_txt {
-  justify-content: center;
-  align-content: center;
-  font-size: 12px;
+  text-align: center;
+  font-size: 13px;
+  position: relative;
+  bottom: 0;
 }
 
 header {
@@ -83,6 +87,7 @@ h1 {
   top: -635px;
   z-index: -1;
   height: 100vh;
+  opacity: 0.8;
 }
 
 .reg_c_box {
@@ -107,4 +112,21 @@ h1 {
   margin: 10px;
   height: 20vh;
   width: 20vw;
+}
+.post_box {
+  display: flex;
+  position: relative;
+  bottom: 800px;
+  left: 50%;
+}
+
+.post {
+  margin: 10px;
+  border-radius: 20px;
+  height: 60px;
+}
+footer {
+  background-color: white;
+  position: relative;
+  bottom: 730px;
 }
