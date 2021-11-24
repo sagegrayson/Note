@@ -2,7 +2,6 @@ const router = require("express").Router();
 const { User, Instrument, Post, Genre } = require("../models");
 //Post, Instrument, Genre
 const withAuth = require("../utils/auth.js");
-// Route will use "/"
 //landingpage
 router.get("/", async (req, res) => {
   try {
@@ -25,7 +24,6 @@ router.get("/home", async (req, res) => {
     res.status(500).json(err);
   }
 });
-// Route will use "/"
 //make an account route/ if not logged in redirect to login page, else show login page
 router.get("/genre/:id", withAuth, async (req, res) => {
   // If the user is not logged in, redirect the user to the login page
@@ -51,7 +49,7 @@ router.get("/genre/:id", withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
-// Route will use "/"
+
 router.get("/user/:id", withAuth, async (req, res) => {
   try {
     const dbUserData = await User.findByPk(req.params.id);
