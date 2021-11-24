@@ -24,6 +24,7 @@ body {
 }
 
 .btn {
+  text-align: center !important;
   position: relative;
   left: -10px;
   border-radius: 30px !important;
@@ -41,6 +42,7 @@ body {
 }
 
 #active_btn {
+  text-align: center !important;
   left: -10px;
   border-radius: 30px !important;
   height: 60px;
@@ -57,9 +59,10 @@ body {
 }
 
 .btn_txt {
-  font-size: 12px;
+  text-align: center;
+  font-size: 13px;
   position: relative;
-  top: 9px;
+  bottom: 0;
 }
 
 header {
@@ -114,7 +117,7 @@ h1 {
   display: flex;
   position: relative;
   bottom: 800px;
-  left: 190px;
+  left: 400px;
 }
 
 .post {
@@ -124,7 +127,6 @@ h1 {
 }
 footer {
   background-color: white;
-  position: static;
-  bottom: 0;
-  right: 0;
+  position: relative;
+  bottom: 730px;
 }
