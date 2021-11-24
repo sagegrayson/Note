@@ -1,9 +1,18 @@
+:root {
+  --Light: #eeeeee;
+  --Dark: #333333;
+  --Navy: #326273;
+  --Blue: #5c9ead;
+  --Orange: #e39774;
+  --Red: #d1345b;
+}
+
 body {
   font-family: "Courier New", Courier, monospace;
 }
 
 #side_bar {
-  background-color: lightblue;
+  background-color: var(--Dark) !important;
   margin: 0;
   padding: 10px;
   display: flex;
@@ -20,13 +29,26 @@ body {
   height: 60px;
   width: 60px;
   margin: 5px;
-  color: white;
-  background-color: purple;
-  border-color: white;
+  color: var(--Dark) !important;
+  background-color: var(--Light) !important;
+  border: 2px solid var(--Dark) !important;
 }
 
 .btn:hover {
-  box-shadow: 5px 2px 5px white;
+  box-shadow: 2px 1px 1px #929292;
+  background-color: var(--Orange);
+}
+
+#active_btn {
+  left: -10px;
+  border-radius: 30px !important;
+  height: 60px;
+  width: 60px;
+  margin: 5px;
+  color: var(--light) !important;
+  background-color: var(--Red) !important;
+  border-color: var(--Light) !important;
+  border: 2px solid var(--Dark) !important;
 }
 
 #plus_btn {
@@ -34,15 +56,22 @@ body {
 }
 
 header {
-  background-color: purple;
-  color: white;
+  background-color: var(--Dark) !important;
+  color: var(--Light) !important;
   display: flex;
-  height: 50px;
+  height: 60px;
   justify-content: center;
 }
 
 h1 {
-  position: relative;
   font-size: 30px;
   top: -12px;
+}
+
+.content {
+  background-color: var(--Navy) !important;
+  left: 80px;
+  top: -710px;
+  height: 710px;
+  width: 648px;
 }
