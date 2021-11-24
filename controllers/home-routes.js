@@ -25,11 +25,8 @@ router.get("/home", async (req, res) => {
     res.status(500).json(err);
   }
 });
-<<<<<<< HEAD
 // Route will use "/"
-=======
 //make an account route/ if not logged in redirect to login page, else show login page
->>>>>>> 584eaa64eb23ea3696e92f642a7b1624fdadc209
 router.get("/genre/:id", withAuth, async (req, res) => {
   // If the user is not logged in, redirect the user to the login page
   // If the user is logged in, allow them to view the genre
