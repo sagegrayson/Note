@@ -16,7 +16,6 @@ const genreData = [
   {
     genre_name: 'R & B',
   },
-  
 ];
 
 const seedGenre = () => Genre.bulkCreate(genreData);

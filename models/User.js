@@ -35,23 +35,15 @@ User.init(
         len: [6],
       },
     },
-    instrument_id: {
-      type: DataTypes.INTEGER,
-      allowNull: true,
-      references: {
-        model: "instrument",
-        key: "id",
-      },
-    },
 
-    friendship_id: {
-      type: DataTypes.INTEGER,
-      allowNull: true,
-      references: {
-        model: "user",
-        key: "id",
-      },
-    },
+    // friendship_id: {
+    //   type: DataTypes.INTEGER,
+    //   allowNull: true,
+    //   references: {
+    //     model: "user",
+    //     key: "id",
+    //   },
+    // },
   },
   {
     hooks: {
