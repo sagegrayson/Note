@@ -28,8 +28,8 @@ body {
   position: relative;
   left: -10px;
   border-radius: 30px !important;
-  height: 60px;
-  width: 60px;
+  height: 53px;
+  width: 100%;
   margin: 5px;
   color: var(--Dark) !important;
   background-color: var(--Light) !important;
@@ -45,13 +45,26 @@ body {
   text-align: center !important;
   left: -10px;
   border-radius: 30px !important;
-  height: 60px;
-  width: 60px;
+  height: 53px;
+  width: 100%;
   margin: 5px;
   color: var(--light) !important;
   background-color: var(--Red) !important;
   border-color: var(--Light) !important;
   border: 2px solid var(--Light) !important;
+}
+
+.post_btn {
+  text-align: center !important;
+  position: relative;
+  left: -10px;
+  border-radius: 30px !important;
+  height: 60px;
+  width: 60px;
+  margin: 5px;
+  color: var(--Dark) !important;
+  background-color: var(--Light) !important;
+  border: 2px solid var(--Blue) !important;
 }
 
 #plus_btn {
