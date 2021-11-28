@@ -3,30 +3,30 @@
 } */
 
 :root {
-	--light: #eeeeee;
-	--dark: #333333;
-	--navy: #326273;
-	--blue: #5c9ead;
-	--orange: #e39774;
-	--red: #d1345b;
+  --light: #eeeeee;
+  --dark: #333333;
+  --navy: #326273;
+  --blue: #5c9ead;
+  --orange: #e39774;
+  --red: #d1345b;
 }
 
 #nav {
-	background-color: var(--dark);
+  background-color: var(--dark);
 }
 
 #main {
-	background-color: var(--light);
-	color: var(--dark);
+  background-color: var(--light);
+  color: var(--dark);
 }
 
 #start-button {
-	background-color: var(--orange);
-	border-color: var(--orange);
-	color: var(--light);
+  background-color: var(--orange);
+  border-color: var(--orange);
+  color: var(--light);
 }
 
 #footer {
-	background-color: var(--navy);
-	color: var(--light);
+  background-color: var(--navy);
+  color: var(--light);
 }
