@@ -1,24 +1,16 @@
-const { User } = require("../models");
+const { Instrument } = require("../models");
 
-const userData = [
+const instrumentData = [
   {
-    instrument_name: "",
-    user_id: "",
+    instrument_name: "Guitar",
+    user_id: 1,
   },
   {
-    instrument_name: "",
-    user_id: "",
-  },
-  {
-    instrument_name: "",
-    user_id: "",
-  },
-  {
-    instrument_name: "",
-    user_id: "",
+    instrument_name: "Drums",
+    user_id: 2,
   },
 ];
 
-const seedGenre = () => Genre.bulkCreate(genreData);
+const seedInstrument = () => Instrument.bulkCreate(instrumentData);
 
-module.exports = seedGenre;
+module.exports = seedInstrument;
