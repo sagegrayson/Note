@@ -9,7 +9,7 @@
 
 body {
   font-family: "Courier New", Courier, monospace;
-  height: 100vh !important;
+  /* height: 100vh !important; */
 }
 
 #side_bar {
@@ -19,8 +19,9 @@ body {
   display: flex;
   flex-direction: column;
   left: 0;
-  height: 100vh;
+  /* height: 100vh; */
   width: 8vw;
+  position: absolute;
 }
 
 .btn {
@@ -97,7 +98,7 @@ h1 {
   justify-content: center;
   align-content: center;
   position: relative;
-  top: -635px;
+  /* top: -635px; */
   z-index: -1;
   height: 100vh;
   opacity: 0.8;
@@ -127,10 +128,8 @@ h1 {
   width: 20vw;
 }
 .post_box {
-  display: flex;
   position: relative;
-  bottom: 800px;
-  left: 50%;
+  bottom: 400px;
 }
 
 .post {
@@ -140,6 +139,6 @@ h1 {
 }
 footer {
   background-color: white;
-  position: relative;
-  bottom: 730px;
+  position: absolute;
+  bottom: 0;
 }

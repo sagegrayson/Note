@@ -7,6 +7,7 @@ router.get("/", async (req, res) => {
   try {
     res.render("landingpage", {
       loggedIn: req.session.loggedIn,
+      layout: false,
     });
   } catch (err) {
     console.log(err);
@@ -16,7 +17,7 @@ router.get("/", async (req, res) => {
 //homepage
 router.get("/home", async (req, res) => {
   try {
-    res.render("welcomepage", {
+    res.render("contentpage", {
       loggedIn: req.session.loggedIn,
     });
   } catch (err) {
