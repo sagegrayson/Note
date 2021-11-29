@@ -11,18 +11,9 @@ Genre.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    genre_name: {
-      type: DataTypes.BLOB,
+    name: {
+      type: DataTypes.STRING,
       allowNull: false,
-    },
-    user_id: {
-      type: DataTypes.INTEGER,
-      allowNull: true,
-      references: {
-        model: "user",
-        key: "id",
-      },
-      allowNull: true,
     },
   },
   {
