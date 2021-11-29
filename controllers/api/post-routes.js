@@ -1,19 +1,9 @@
 const router = require("express").Router();
-<<<<<<< HEAD
-const { Post } = require("../../models");
-//creates new post
-
-// The  '/api' endpoint.
-
-// api/post
-router.post("/post", async (req, res) => {
-=======
 const { Post, Genre, User } = require("../../models");
 const withAuth = require("../../utils/auth.js");
 
 //api/posts/create
 router.post("/create", async (req, res) => {
->>>>>>> main
   try {
     const userData = await Post.create({
       Post_text: req.body.post,
