@@ -47,9 +47,9 @@
     update his template to use the correct classes
 */
 
-body {
+.main_body {
   font-family: "Courier New", Courier, monospace;
-  /* height: 100vh !important; */
+  height: 100vh;
 }
 
 #side_bar {
@@ -119,7 +119,7 @@ body {
   bottom: 0;
 }
 
-header {
+.main_header {
   background-color: var(--dark);
   color: var(--light);
   display: flex;
@@ -138,7 +138,6 @@ header {
   justify-content: center;
   align-content: center;
   position: relative;
-  /* top: -635px; */
   z-index: -1;
   height: 100vh;
   opacity: 0.8;
@@ -179,8 +178,9 @@ header {
   border-radius: 20px;
   height: 60px;
 }
-footer {
+.main_footer {
   background-color: white;
   position: absolute;
   bottom: 0;
+  width: 100%;
 }
