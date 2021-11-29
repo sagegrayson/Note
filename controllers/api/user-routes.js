@@ -1,8 +1,10 @@
 const router = require("express").Router();
 const { User } = require("../../models");
+const withAuth = require("../../utils/auth.js");
 
 //create new user
-router.post("/", async (req, res) => {
+//api/users
+router.post("/create", async (req, res) => {
   try {
     const userData = await User.create({
       username: req.body.username,
@@ -20,8 +22,23 @@ router.post("/", async (req, res) => {
     res.status(500).json(err);
   }
 });
+//api/users/id
+router.get("/:id", withAuth, async (req, res) => {
+  try {
+    const dbUserData = await User.findByPk(req.params.id);
 
-//login
+    const user = dbUserData.get({ plain: true });
+
+    res.render("userpage", {
+      user,
+      loggedIn: req.session.loggedIn,
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+//api/users/login
 router.post("/login", async (req, res) => {
   try {
     const userData = await User.findOne({
@@ -45,7 +62,7 @@ router.post("/login", async (req, res) => {
     res.status(500).json(err);
   }
 });
-//logout
+//api/users/logout
 router.post("/logout", (req, res) => {
   if (req.session.loggedIn) {
     req.session.destroy(() => {
