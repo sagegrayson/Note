@@ -28,53 +28,29 @@ router.get("/home", async (req, res) => {
     res.status(500).json(err);
   }
 });
-//make an account route/ if not logged in redirect to login page, else show login page
-router.get("/genre/:id", withAuth, async (req, res) => {
-  // If the user is not logged in, redirect the user to the login page
-  // If the user is logged in, allow them to view the genre
-  try {
-    const dbGenreData = await Genre.findByPk(req.params.id, {
-      include: [
-        {
-          model: Post,
-          attributes: ["post_textcontent"],
-        },
-      ],
-    });
+//withAuth
 
-    const genre = dbGenreData.get({ plain: true });
-
-    res.render("genre", {
-      genre,
-      loggedIn: req.session.loggedIn,
-    });
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
-  }
-});
-
-router.get("/user/:id", withAuth, async (req, res) => {
-  try {
-    const dbUserData = await User.findByPk(req.params.id);
-
-    const user = dbUserData.get({ plain: true });
-
-    res.render("userpage", {
-      user,
-      loggedIn: req.session.loggedIn,
-    });
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
-  }
-});
-router.get("/login", (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect("/");
-    return;
-  }
-
-  res.render("login");
-});
+// router.get("/genre/:id", async (req, res) => {
+//   // If the user is not logged in, redirect the user to the login page
+//   // If the user is logged in, allow them to view the genre
+//   try {
+//     const dbGenreData = await Genre.findByPk(req.params.id, {
+//       include: [
+//         {
+//           model: Post,
+//           attributes: ["post_text", "user_id"],
+//         },
+//       ],
+//     });
+//     const genre = dbGenreData.get({ plain: true });
+//     //res.json(genre);
+//     res.render("genre", {
+//       genre,
+//       loggedIn: req.session.loggedIn,
+//     });
+//   } catch (err) {
+//     console.log(err);
+//     res.status(500).json(err);
+//   }
+// });
 module.exports = router;
