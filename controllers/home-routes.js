@@ -34,17 +34,71 @@ router.get("/genre/:id", withAuth, async (req, res) => {
       include: [
         {
           model: Post,
-          attributes: ["post_textcontent"],
+          attributes: ["post_text"],
         },
       ],
     });
-
     const genre = dbGenreData.get({ plain: true });
 
-    res.render("genre", {
-      genre,
-      loggedIn: req.session.loggedIn,
-    });
+    switch (req.params.id) {
+      case 1:
+        {
+          res.render("contentpage", {
+            rockpage,
+            genre,
+            loggedIn: req.session.loggedIn,
+          });
+        }
+
+        break;
+      case 2:
+        {
+          res.render("contentpage", {
+            poppage,
+            genre,
+            loggedIn: req.session.loggedIn,
+          });
+        }
+
+        break;
+      case 3:
+        {
+          res.render("contentpage", {
+            metalpage,
+            genre,
+            loggedIn: req.session.loggedIn,
+          });
+        }
+
+        break;
+      case 4:
+        {
+          res.render("contentpage", {
+            hiphoppage,
+            genre,
+            loggedIn: req.session.loggedIn,
+          });
+        }
+
+        break;
+      case 5:
+        {
+          res.render("contentpage", {
+            RandBpage,
+            genre,
+            loggedIn: req.session.loggedIn,
+          });
+        }
+
+        break;
+      default:
+    }
+
+    // res.render("genre", {
+    //   contentpage,
+    //   genre,
+    //   loggedIn: req.session.loggedIn,
+    // });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
