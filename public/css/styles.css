@@ -53,7 +53,7 @@ body {
 }
 
 #side_bar {
-  background-color: var(--dark) !important;
+  background-color: var(--dark);
   margin: 0;
   padding: 10px;
   display: flex;
@@ -64,48 +64,48 @@ body {
   position: absolute;
 }
 
-.side_btn {
-  text-align: center !important;
-  position: relative;
+.side_btns {
+  text-align: center;
   left: -10px;
-  border-radius: 30px !important;
+  border-radius: 30px;
   height: 53px;
   width: 100%;
   margin: 5px;
-  color: var(--dark) !important;
-  background-color: var(--light) !important;
-  border: 2px solid var(--blue) !important;
+  color: var(--dark);
+  background-color: var(--light);
+  border-color: var(--navy);
+  border: 2px solid var(--navy);
 }
 
-.side_btn:hover {
+.side_btns:hover {
   box-shadow: 2px 1px 1px #929292;
   background-color: var(--orange);
 }
 
 #active_btn {
-  text-align: center !important;
+  text-align: center;
   left: -10px;
-  border-radius: 30px !important;
+  border-radius: 30px;
   height: 53px;
   width: 100%;
   margin: 5px;
-  color: var(--light) !important;
-  background-color: var(--red) !important;
-  border-color: var(--light) !important;
-  border: 2px solid var(--light) !important;
+  color: var(--light);
+  background-color: var(--red);
+  border-color: var(--light);
+  border: 2px solid var(--light);
 }
 
 .post_btn {
-  text-align: center !important;
+  text-align: center;
   position: relative;
   left: -10px;
-  border-radius: 30px !important;
+  border-radius: 30px;
   height: 60px;
   width: 60px;
   margin: 5px;
-  color: var(--dark) !important;
-  background-color: var(--light) !important;
-  border: 2px solid var(--blue) !important;
+  color: var(--dark);
+  background-color: var(--light);
+  border: 2px solid var(--blue);
 }
 
 #plus_btn {
@@ -120,19 +120,19 @@ body {
 }
 
 header {
-  background-color: var(--dark) !important;
-  color: var(--light) !important;
+  background-color: var(--dark);
+  color: var(--light);
   display: flex;
   height: 60px;
   justify-content: center;
 }
 
-h1 {
+#note_title {
   font-size: 30px;
   top: -12px;
 }
 
-.content {
+.content_boxes {
   background-color: var(--navy) !important;
   display: flex;
   justify-content: center;
