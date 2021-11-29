@@ -110,6 +110,7 @@ h1 {
   margin: 10px;
   height: 40vh;
   width: 20vw;
+  box-shadow: 5px 5px 5px var(--Dark);
 }
 
 .big_c_box {
@@ -118,6 +119,7 @@ h1 {
   margin: 10px;
   height: 60vh;
   width: 20vw;
+  box-shadow: 5px 5px 5px var(--Dark);
 }
 
 .small_c_box {
@@ -126,7 +128,9 @@ h1 {
   margin: 10px;
   height: 20vh;
   width: 20vw;
+  box-shadow: 5px 5px 5px var(--Dark);
 }
+
 .post_box {
   position: relative;
   bottom: 400px;
