@@ -133,7 +133,8 @@ h1 {
 
 .post_box {
   position: relative;
-  bottom: 400px;
+  bottom: 324px;
+  right: -63%;
 }
 
 .post {
