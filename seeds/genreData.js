@@ -1,5 +1,5 @@
 const { Genre } = require("../models");
-
+//These are autoincremented
 const genreData = [
   {
     name: "Rock",
@@ -8,7 +8,7 @@ const genreData = [
     name: "Pop",
   },
   {
-    name: "Folk",
+    genre_name: "Country",
   },
   {
     name: "Hip Hop",
