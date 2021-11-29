@@ -8,7 +8,7 @@ const genreData = [
     name: "Pop",
   },
   {
-    genre_name: "Country",
+    name: "Country",
   },
   {
     name: "Hip Hop",
