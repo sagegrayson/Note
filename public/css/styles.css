@@ -5,32 +5,32 @@
 /* SAGE =================================================== */
 
 :root {
-	--light: #eeeeee;
-	--dark: #333333;
-	--navy: #326273;
-	--blue: #5c9ead;
-	--orange: #e39774;
-	--red: #d1345b;
+  --light: #eeeeee;
+  --dark: #333333;
+  --navy: #326273;
+  --blue: #5c9ead;
+  --orange: #e39774;
+  --red: #d1345b;
 }
 
 #nav {
-	background-color: var(--dark);
+  background-color: var(--dark);
 }
 
 #main {
-	background-color: var(--light);
-	color: var(--dark);
+  background-color: var(--light);
+  color: var(--dark);
 }
 
 #start-button {
-	background-color: var(--orange);
-	border-color: var(--orange);
-	color: var(--light);
+  background-color: var(--orange);
+  border-color: var(--orange);
+  color: var(--light);
 }
 
 #footer {
-	background-color: var(--navy);
-	color: var(--light);
+  background-color: var(--navy);
+  color: var(--light);
 }
 
 /* KAI ==================================================== */
@@ -47,138 +47,140 @@
     update his template to use the correct classes
 */
 
-body {
-	font-family: "Courier New", Courier, monospace;
-	/* height: 100vh !important; */
+.main_body {
+  font-family: "Courier New", Courier, monospace;
+  height: 100vh;
 }
 
 #side_bar {
-	background-color: var(--dark) !important;
-	margin: 0;
-	padding: 10px;
-	display: flex;
-	flex-direction: column;
-	left: 0;
-	/* height: 100vh; */
-	width: 8vw;
-	position: absolute;
+  background-color: var(--dark);
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  height: 100vh;
+  width: 8vw;
+  position: absolute;
 }
 
-.btn {
-	text-align: center !important;
-	position: relative;
-	left: -10px;
-	border-radius: 30px !important;
-	height: 53px;
-	width: 100%;
-	margin: 5px;
-	color: var(--dark) !important;
-	background-color: var(--light) !important;
-	border: 2px solid var(--blue) !important;
+.side_btns {
+  text-align: center;
+  left: -10px;
+  border-radius: 30px;
+  height: 53px;
+  width: 100%;
+  margin: 5px;
+  color: var(--dark);
+  background-color: var(--light);
+  border-color: var(--navy);
+  border: 2px solid var(--navy);
 }
 
-.btn:hover {
-	box-shadow: 2px 1px 1px #929292;
-	background-color: var(--orange);
+.side_btns:hover {
+  box-shadow: 2px 1px 1px #929292;
+  background-color: var(--orange);
 }
 
 #active_btn {
-	text-align: center !important;
-	left: -10px;
-	border-radius: 30px !important;
-	height: 53px;
-	width: 100%;
-	margin: 5px;
-	color: var(--light) !important;
-	background-color: var(--red) !important;
-	border-color: var(--light) !important;
-	border: 2px solid var(--light) !important;
+  text-align: center;
+  left: -10px;
+  border-radius: 30px;
+  height: 53px;
+  width: 100%;
+  margin: 5px;
+  color: var(--light);
+  background-color: var(--red);
+  border-color: var(--light);
+  border: 2px solid var(--light);
 }
 
 .post_btn {
-	text-align: center !important;
-	position: relative;
-	left: -10px;
-	border-radius: 30px !important;
-	height: 60px;
-	width: 60px;
-	margin: 5px;
-	color: var(--dark) !important;
-	background-color: var(--light) !important;
-	border: 2px solid var(--blue) !important;
+  text-align: center;
+  position: relative;
+  left: -10px;
+  border-radius: 30px;
+  height: 60px;
+  width: 60px;
+  margin: 5px;
+  color: var(--dark);
+  background-color: var(--light);
+  border: 2px solid var(--blue);
 }
 
 #plus_btn {
-	font-size: 30px;
+  font-size: 30px;
 }
 
 .btn_txt {
-	text-align: center;
-	font-size: 13px;
-	position: relative;
-	bottom: 0;
+  text-align: center;
+  font-size: 13px;
+  position: relative;
+  bottom: 0;
 }
 
-header {
-	background-color: var(--dark) !important;
-	color: var(--light) !important;
-	display: flex;
-	height: 60px;
-	justify-content: center;
+.main_header {
+  background-color: var(--dark);
+  color: var(--light);
+  display: flex;
+  height: 60px;
+  justify-content: center;
 }
 
-h1 {
-	font-size: 30px;
-	top: -12px;
+#note_title {
+  font-size: 30px;
+  top: -12px;
 }
 
-.content {
-	background-color: var(--navy) !important;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	position: relative;
-	/* top: -635px; */
-	z-index: -1;
-	height: 100vh;
-	opacity: 0.8;
+.content_boxes {
+  background-color: var(--navy) !important;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+  opacity: 0.8;
+  box-shadow: 5px 5px 5px black;
 }
 
 .reg_c_box {
-	background-color: white;
-	border-radius: 10px;
-	margin: 10px;
-	height: 40vh;
-	width: 20vw;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  height: 40vh;
+  width: 20vw;
 }
 
 .big_c_box {
-	background-color: white;
-	border-radius: 10px;
-	margin: 10px;
-	height: 60vh;
-	width: 20vw;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  height: 60vh;
+  width: 20vw;
 }
 
 .small_c_box {
-	background-color: white;
-	border-radius: 10px;
-	margin: 10px;
-	height: 20vh;
-	width: 20vw;
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  height: 20vh;
+  width: 20vw;
 }
 .post_box {
-	position: relative;
-	bottom: 400px;
+  position: relative;
+  bottom: 40vh;
+  left: 50%;
 }
 
 .post {
-	margin: 10px;
-	border-radius: 20px;
-	height: 60px;
+  margin: 10px;
+  border-radius: 20px;
+  height: 60px;
 }
-footer {
-	background-color: white;
-	position: absolute;
-	bottom: 0;
+.main_footer {
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
