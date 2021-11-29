@@ -7,48 +7,49 @@ const withAuth = require("../utils/auth.js");
 // The '/' endpoint
 
 router.get("/", async (req, res) => {
-  try {
-    res.render("landing", {
-      loggedIn: req.session.loggedIn,
-      // layout: false,
-    });
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
-  }
-});
-//homepage
-router.get("/home", async (req, res) => {
-  try {
-    res.render("contentpage", {
-      loggedIn: req.session.loggedIn,
-    });
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
-  }
+	try {
+		res.render("landing", {
+			loggedIn: req.session.loggedIn,
+			// layout: false,
+		});
+	} catch (err) {
+		console.log(err);
+		res.status(500).json(err);
+	}
 });
 
 router.get("/login", async (req, res) => {
-  try {
-    res.render("login", {
-      loggedIn: req.session.loggedIn,
-    });
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
-  }
+	try {
+		res.render("login", {
+			loggedIn: req.session.loggedIn,
+		});
+	} catch (err) {
+		console.log(err);
+		res.status(500).json(err);
+	}
 });
 
 router.get("/create", async (req, res) => {
-  try {
-    res.render("create", {
-      loggedIn: req.session.loggedIn,
-    });
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
-  }
+	try {
+		res.render("create", {
+			loggedIn: req.session.loggedIn,
+		});
+	} catch (err) {
+		console.log(err);
+		res.status(500).json(err);
+	}
+});
+
+//homepage
+router.get("/home", async (req, res) => {
+	try {
+		res.render("home", {
+			loggedIn: req.session.loggedIn,
+		});
+	} catch (err) {
+		console.log(err);
+		res.status(500).json(err);
+	}
 });
 
 //withAuth
@@ -76,7 +77,5 @@ router.get("/create", async (req, res) => {
 //     res.status(500).json(err);
 //   }
 // });
-
-
 
 module.exports = router;
