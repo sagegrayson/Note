@@ -1,7 +1,6 @@
 //This is a possibility, not needed for mvp but took 2 seconds to make
 
 const { Model, DataTypes } = require("sequelize");
-const bcrypt = require("bcrypt");
 const sequelize = require("../config/connection");
 
 class audiopost extends Model {}
