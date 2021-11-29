@@ -2,6 +2,8 @@
     border: 1px solid red;
 } */
 
+/* SAGE =================================================== */
+
 :root {
   --light: #eeeeee;
   --dark: #333333;
@@ -29,4 +31,156 @@
 #footer {
   background-color: var(--navy);
   color: var(--light);
+}
+
+/* KAI ==================================================== */
+/* 
+  I ALREADY
+    Merged the CSS Files
+    Changed the HREF in all template HTMLs / Correct Order
+    Updated the CSS vars
+
+  NEEDS TO
+    stop adressing bootstrap class
+    stop using important
+    change classes to either custom classes or ids
+    update his template to use the correct classes
+*/
+
+.main_body {
+  font-family: "Courier New", Courier, monospace;
+  height: 100vh;
+}
+
+#side_bar {
+  background-color: var(--dark);
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  height: 100vh;
+  width: 8vw;
+  position: absolute;
+}
+
+.side_btns {
+  text-align: center;
+  left: -10px;
+  border-radius: 30px;
+  height: 53px;
+  width: 100%;
+  margin: 5px;
+  color: var(--dark);
+  background-color: var(--light);
+  border-color: var(--navy);
+  border: 2px solid var(--navy);
+}
+
+.side_btns:hover {
+  box-shadow: 2px 1px 1px #929292;
+  background-color: var(--orange);
+}
+
+#active_btn {
+  text-align: center;
+  left: -10px;
+  border-radius: 30px;
+  height: 53px;
+  width: 100%;
+  margin: 5px;
+  color: var(--light);
+  background-color: var(--red);
+  border-color: var(--light);
+  border: 2px solid var(--light);
+}
+
+.post_btn {
+  text-align: center;
+  position: relative;
+  left: -10px;
+  border-radius: 30px;
+  height: 60px;
+  width: 60px;
+  margin: 5px;
+  color: var(--dark);
+  background-color: var(--light);
+  border: 2px solid var(--blue);
+}
+
+#plus_btn {
+  font-size: 30px;
+}
+
+.btn_txt {
+  text-align: center;
+  font-size: 13px;
+  position: relative;
+  bottom: 0;
+}
+
+.main_header {
+  background-color: var(--dark);
+  color: var(--light);
+  display: flex;
+  height: 60px;
+  justify-content: center;
+}
+
+#note_title {
+  font-size: 30px;
+  top: -12px;
+}
+
+.content_boxes {
+  background-color: var(--navy) !important;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+  opacity: 0.8;
+  box-shadow: 5px 5px 5px black;
+}
+
+.reg_c_box {
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  height: 40vh;
+  width: 20vw;
+}
+
+.big_c_box {
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  height: 60vh;
+  width: 20vw;
+}
+
+.small_c_box {
+  background-color: white;
+  border-radius: 10px;
+  margin: 10px;
+  height: 20vh;
+  width: 20vw;
+}
+.post_box {
+  position: relative;
+  bottom: 40vh;
+  left: 50%;
+}
+
+.post {
+  margin: 10px;
+  border-radius: 20px;
+  height: 60px;
+}
+.main_footer {
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }

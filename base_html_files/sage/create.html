@@ -1,5 +1,4 @@
-<!-- temp -->
-DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -12,9 +11,8 @@ DOCTYPE html>
 			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 			crossorigin="anonymous"
 		/>
-		<link href="../public/css/styles.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../../public/css/styles.css" />
 	</head>
-	
 	<body>
 		<!-- Navbar -->
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
@@ -23,13 +21,14 @@ DOCTYPE html>
 				<div class="d-flex">
 					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link" href="#">About</a>
+							<a class="nav-link" href="#">Log In</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
-<!-- Sign-in Box, will go in handlebars -->
+
+		<!-- Sign up Box -> Will go in handlebars -->
 		<main class="text-center" id="main">
 			<div
 				class="
@@ -42,7 +41,9 @@ DOCTYPE html>
 			>
 				<body class="text-center">
 					<form class="form-signin">
-						<h1 class="h3 mb-3 font-weight-normal">Sign In</h1>
+						<h1 class="h3 mb-3 font-weight-normal">
+							Create an Account
+						</h1>
 						<input
 							type="email"
 							id="inputEmail"
@@ -51,31 +52,36 @@ DOCTYPE html>
 							autofocus=""
 						/>
 						<input
+							type="username"
+							id="username"
+							class="h3 form-control"
+							placeholder="Username"
+						/>
+						<input
 							type="password"
 							id="inputPassword"
 							class="h3 form-control"
 							placeholder="Password"
 						/>
-						<div class="checkbox mb-3">
-							<label>
-								<input
-									type="checkbox"
-									value="remember-me"
-								/>
-								Remember Me
-							</label>
-						</div>
+						<input
+							type="password"
+							id="inputPassword"
+							class="h3 form-control"
+							placeholder="Verify Password"
+						/>
 						<button
 							class="btn btn-lg btn-primary btn-block"
 							type="submit"
 							id="start-button"
 						>
-							Go
+							Create
 						</button>
 					</form>
 				</body>
 			</div>
 		</main>
+
+		<!-- Footer -->
 		<footer class="footer py-3 text-center" id="footer">
 			<p>
 				Ami Asokumar - Chris Insignares - James Sgerella - Kai Gerstley

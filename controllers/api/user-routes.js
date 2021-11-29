@@ -1,8 +1,26 @@
 const router = require("express").Router();
 const { User } = require("../../models");
+const withAuth = require("../../utils/auth.js");
 
-//create new user
-router.post("/", async (req, res) => {
+//The '/api/users' endpoint
+
+//api/users/all - gets all users as json
+router.get("/all", async (req, res) => {
+  try {
+    const dbPostData = await User.findAll();
+
+    const user = dbPostData.map((user) => user.get({ plain: true }));
+
+    res.json(user);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+module.exports = router;
+
+//api/users/create - creates a new user in database
+router.post("/create", async (req, res) => {
   try {
     const userData = await User.create({
       username: req.body.username,
@@ -20,8 +38,23 @@ router.post("/", async (req, res) => {
     res.status(500).json(err);
   }
 });
+//api/users/id - gets a user based on id entered
+router.get("/:id", withAuth, async (req, res) => {
+  try {
+    const dbUserData = await User.findByPk(req.params.id);
 
-//login
+    const user = dbUserData.get({ plain: true });
+
+    res.render("userpage", {
+      user,
+      loggedIn: req.session.loggedIn,
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+//api/users/login - logs in user if correct information entered
 router.post("/login", async (req, res) => {
   try {
     const userData = await User.findOne({
@@ -45,7 +78,7 @@ router.post("/login", async (req, res) => {
     res.status(500).json(err);
   }
 });
-//logout
+//api/users/logout - logs out a user
 router.post("/logout", (req, res) => {
   if (req.session.loggedIn) {
     req.session.destroy(() => {

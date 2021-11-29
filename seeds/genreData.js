@@ -1,20 +1,20 @@
 const { Genre } = require("../models");
-
+//These are autoincremented
 const genreData = [
   {
-    genre_name: "Rock",
+    name: "Rock",
   },
   {
-    genre_name: "Pop",
+    name: "Pop",
   },
   {
-    genre_name: "Metal",
+    name: "Country",
   },
   {
-    genre_name: "Hip Hop",
+    name: "Hip Hop",
   },
   {
-    genre_name: "R & B",
+    name: "R & B",
   },
 ];
 

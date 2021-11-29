@@ -1,5 +1,4 @@
 const { Model, DataTypes } = require("sequelize");
-const bcrypt = require("bcrypt");
 const sequelize = require("../config/connection");
 
 class Genre extends Model {}
@@ -11,18 +10,9 @@ Genre.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    genre_name: {
-      type: DataTypes.BLOB,
+    name: {
+      type: DataTypes.STRING,
       allowNull: false,
-    },
-    user_id: {
-      type: DataTypes.INTEGER,
-      allowNull: true,
-      references: {
-        model: "user",
-        key: "id",
-      },
-      allowNull: true,
     },
   },
   {

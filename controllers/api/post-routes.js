@@ -1,21 +1,28 @@
 const router = require("express").Router();
-const { Post } = require("../../models");
-//creates new post
-router.post("/post", async (req, res) => {
+const { Post, Genre, User } = require("../../models");
+const withAuth = require("../../utils/auth.js");
+
+//The '/api/post' endpoint
+
+//api/posts/all - gets all posts as json
+router.get("/all", async (req, res) => {
   try {
-    const userData = await Post.create({
-      Post_text: req.body.post,
-      user_id: req.body.user,
-      genre_id: req.body.genre,
+    const dbPostData = await Post.findAll({
+      include: [
+        {
+          model: User,
+          attributes: ["username"],
+        },
+        { model: Genre, attributes: ["name"] },
+      ],
     });
 
-    req.session.save(() => {
-      req.session.loggedIn = true;
+    const posts = dbPostData.map((post) => post.get({ plain: true }));
 
-      res.status(200).json(userData);
-    });
+    res.json(posts);
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
 });
+module.exports = router;
