@@ -3,6 +3,9 @@ const { User, Instrument, Post, Genre } = require("../models");
 //Post, Instrument, Genre
 const withAuth = require("../utils/auth.js");
 //landingpage
+
+// The '/' endpoint
+
 router.get("/", async (req, res) => {
   try {
     res.render("landingpage", {

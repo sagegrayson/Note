@@ -1,6 +1,10 @@
 const router = require("express").Router();
 const { Post } = require("../../models");
 //creates new post
+
+// The  '/api' endpoint.
+
+// api/post
 router.post("/post", async (req, res) => {
   try {
     const userData = await Post.create({
