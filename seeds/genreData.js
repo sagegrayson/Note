@@ -5,16 +5,13 @@ const genreData = [
     name: "Rock",
   },
   {
-    name: "Pop",
+    name: "Rap",
   },
   {
     name: "Country",
   },
   {
-    name: "Hip Hop",
-  },
-  {
-    name: "R & B",
+    name: "Folk",
   },
 ];
 

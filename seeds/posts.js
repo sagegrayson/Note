@@ -7,9 +7,19 @@ const postData = [
     user_id: 1,
   },
   {
-    post_text: "I love Pop",
+    post_text: "I love Rap",
     genre_id: 2,
     user_id: 2,
+  },
+  {
+    post_text: "I love Country",
+    genre_id: 3,
+    user_id: 3,
+  },
+  {
+    post_text: "I love Folk",
+    genre_id: 4,
+    user_id: 4,
   },
 ];
 
