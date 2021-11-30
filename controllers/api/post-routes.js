@@ -12,6 +12,7 @@ router.post("/create", async (req, res) => {
 
     req.session.save(() => {
       req.session.loggedIn = true;
+      //Includes a get route for all posts
 
       res.status(200).json(postData);
     });
