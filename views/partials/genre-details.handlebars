@@ -1,11 +1,10 @@
-{{!-- Partial card that will be used for each post displayed on the home page. --}}
-{{!-- The order of user.username and genre.name was switched, so if this produces an error in the display, just switch these two lines.--}}
+{{! Partial card that will be used for each post displayed on the home page. }}
+{{! The order of user.username and genre.name was switched, so if this produces an error in the display, just switch these two lines.}}
 
-<div class="card" style="width: 20rem;">
+<div class="card my-3 mx-auto" style="width: 20rem;">
   <div class="card-body">
-  <h5 class='card-subtitle'>{{user.username}}</h5>
-      <h6 class='card-title mb-2 text-muted'>{{genre.name}}</h6>
-      <p class="card-text">{{post_text}}</p>
-    </div>
+    <h5 class="card-subtitle">{{user.username}}</h5>
+    <h6 class="card-title mb-2 text-muted">{{genre.name}}</h6>
+    <p class="card-text text-center">{{post_text}}</p>
   </div>
 </div>

@@ -47,7 +47,7 @@ router.get("/home", withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
-//home/genre_id - brings the homepage with genre loaded and all posts attacted
+//home/genre_id - brings the homepage with genre loaded and all posts attached
 router.get("/home/:genre_id", withAuth, async (req, res) => {
   try {
     const dbPostData = await Post.findAll({
