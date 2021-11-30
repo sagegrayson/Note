@@ -3,6 +3,7 @@ const { Post, Genre, User } = require("../../models");
 const withAuth = require("../../utils/auth.js");
 
 //The '/api/posts' endpoint
+//Includes a get route for all posts
 
 //api/posts/all - gets all posts as json
 router.get("/all", async (req, res) => {

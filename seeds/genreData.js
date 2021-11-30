@@ -13,6 +13,9 @@ const genreData = [
   {
     name: "Folk",
   },
+  {
+    name: "Pop",
+  },
 ];
 
 const seedGenre = () => Genre.bulkCreate(genreData);
