@@ -1,56 +1,57 @@
+{{! Handlebars for the login page. Has the Create an account box, as well as a login box. }}
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
-	<div class="container-fluid">
-		<a class="navbar-brand me-auto" href="./">Note</a>
-		<div class="d-flex">
-			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-				<li class="nav-item">
-					<a class="nav-link" href="./create">Create Account</a>
-				</li>
-			</ul>
-		</div>
-	</div>
+  <div class="container-fluid">
+    <a class="navbar-brand me-auto" href="./">Note</a>
+    <div class="d-flex">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="./create">Create Account</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
 <main class="text-center" id="main">
-	<div
-		class="d-flex flex-column min-vh-100 justify-content-center align-items-center"
-	>
-		<body class="text-center">
-			<form class="form-signin">
-				<h1 class="h3 mb-3 font-weight-normal">Sign In</h1>
-				<input
-					type="email"
-					id="inputEmail"
-					class="h3 form-control"
-					placeholder="Email address"
-					autofocus=""
-				/>
-				<input
-					type="password"
-					id="inputPassword"
-					class="h3 form-control"
-					placeholder="Password"
-				/>
-				<div class="checkbox mb-3">
-					<label>
-						<input type="checkbox" value="remember-me" />
-						Remember Me
-					</label>
-				</div>
-				<button
-					class="btn btn-lg btn-primary btn-block"
-					type="submit"
-					id="start-button"
-				>
-					Go
-				</button>
-			</form>
-		</body>
-	</div>
+  <div
+    class="d-flex flex-column min-vh-100 justify-content-center align-items-center"
+  >
+    <body class="text-center">
+      <form class="form-signin">
+        <h1 class="h3 mb-3 font-weight-normal">Sign In</h1>
+        <input
+          type="email"
+          id="inputEmail"
+          class="h3 form-control"
+          placeholder="Email address"
+          autofocus=""
+        />
+        <input
+          type="password"
+          id="inputPassword"
+          class="h3 form-control"
+          placeholder="Password"
+        />
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me" />
+            Remember Me
+          </label>
+        </div>
+        <button
+          class="btn btn-lg btn-primary btn-block"
+          type="submit"
+          id="start-button"
+        >
+          Go
+        </button>
+      </form>
+    </body>
+  </div>
 </main>
 <footer class="footer py-3 text-center" id="footer">
-	<p>
-		Ami Asokumar - Chris Insignares - James Sgerella - Kai Gerstley - Sage
-		Grayson
-	</p>
-	<a id="footer" href="https://github.com/sagegrayson/Note">Github</a>
+  <p>
+    Ami Asokumar - Chris Insignares - James Sgerella - Kai Gerstley - Sage
+    Grayson
+  </p>
+  <a id="footer" href="https://github.com/sagegrayson/Note">Github</a>
 </footer>
