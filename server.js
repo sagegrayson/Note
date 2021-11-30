@@ -38,3 +38,8 @@ app.use(routes);
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log("Now listening on " + PORT));
 });
+
+//THINGS TO UNCOMMENT/FIX BEFORE PUSHING TO MAIN:
+
+// Uncomment withAuth helper function
+// DELETE .env
