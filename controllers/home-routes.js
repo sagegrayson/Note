@@ -37,7 +37,7 @@ router.get("/create", async (req, res) => {
 });
 
 //homepage - brings you to home page
-router.get("/home", async (req, res) => {
+router.get("/home", withAuth, async (req, res) => {
   try {
     res.render("home", {
       loggedIn: req.session.loggedIn,
@@ -48,7 +48,7 @@ router.get("/home", async (req, res) => {
   }
 });
 //home/genre_id - brings the homepage with genre loaded and all posts attacted
-router.get("/home/:genre_id", async (req, res) => {
+router.get("/home/:genre_id", withAuth, async (req, res) => {
   try {
     const dbPostData = await Post.findAll({
       where: { genre_id: req.params.genre_id },
