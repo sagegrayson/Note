@@ -6,23 +6,23 @@
     <nav id="side_bar">
       <div>
         {{!-- When the button for a genre is clicked, will use the appropriate route to fetch the data associated with that genre --}}
-        <button onclick="window.location.href='/home/5'"class="side_btns bg-dark" id="active_btn">
+        <button onclick="window.location.href='/home/5'"class="side_btns" id="active_btn">
           <p class="btn_txt">Pop</p>
         </button>
       </div>
       <div>
-        <button onclick="window.location.href='/home/2'" class="side_btns bg-dark"><p id="rap"class="btn_txt">Rap</p></button>
+        <button onclick="window.location.href='/home/2'" class="side_btns"><p id="rap"class="btn_txt">Rap</p></button>
       </div>
       <div>
-        <button onclick="window.location.href='/home/1'"class="side_btns bg-dark"><p id="rock"class="btn_txt">Rock</p></button>
+        <button onclick="window.location.href='/home/1'"class="side_btns"><p id="rock"class="btn_txt">Rock</p></button>
       </div>
       <div>
-        <button onclick="window.location.href='/home/3'"class="side_btns bg-dark"><p id="country"class="btn_txt">Country</p></button>
+        <button onclick="window.location.href='/home/3'"class="side_btns"><p id="country"class="btn_txt">Country</p></button>
       </div>
       <div>
-        <button onclick="window.location.href='/home/4'" class="side_btns bg-dark"><p id="folk"class="btn_txt">Folk</p></button>
+        <button onclick="window.location.href='/home/4'" class="side_btns"><p id="folk"class="btn_txt">Folk</p></button>
       </div>
-      <div><button class="side_btns" id="plus_btn">+</button></div>
+      <div><button onclick="window.location.href='/post'" class="side_btns" id="plus_btn">+</button></div>
     </nav>
 
 
@@ -35,6 +35,9 @@
       {{else}}
     {{/if}} 
     </main>
+
+    
+    
     {{!-- <footer class="footer py-3 text-center" id="home_footer">
       <p> Ami Asokumar - Chris Insignares -  James
       Sgerella - Kai Gerstley - Sage Grayson</p>

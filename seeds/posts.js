@@ -31,7 +31,7 @@ const postData = [
     user_id: 3,
   },
   {
-    post_text: "Doja Cat is so crazy but ngl, her music goes off so hard",
+    post_text: "Doja Cat is so crazy but ngl, her music goes off pretty hard",
     genre_id: 5,
     user_id: 4,
   },

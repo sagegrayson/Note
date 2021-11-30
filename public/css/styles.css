@@ -78,13 +78,14 @@
   justify-content: center;
   text-align: center;
   left: -10px;
-  border-radius: 15px;
+  border-radius: 20px;
   height: 60px;
   width: 100%;
   margin: 5px;
   border-color: var(--navy);
   border: 2px solid var(--navy);
   padding: 2px;
+  background-color: var(--dark);
 }
 
 /* Used */
