@@ -9,9 +9,9 @@ router.get("/all", async (req, res) => {
   try {
     const dbPostData = await User.findAll();
 
-    const user = dbPostData.map((user) => user.get({ plain: true }));
+    //const user = dbPostData.map((user) => user.get({ plain: true }));
 
-    res.json(user);
+    res.json(dbPostData);
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
@@ -20,7 +20,7 @@ router.get("/all", async (req, res) => {
 module.exports = router;
 
 //api/users/create - creates a new user in database
-router.post("/create", async (req, res) => {
+router.post("/post", async (req, res) => {
   try {
     const userData = await User.create({
       username: req.body.username,

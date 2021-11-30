@@ -23,16 +23,12 @@
       <div><button onclick="window.location.href='/post'" class="side_btns" id="plus_btn">+</button></div>
     </nav>
     <main>
-      {{!-- Will render a card for each post if there is at least 1 post passed in from the database --}}
-      {{#if post}}
-      {{#each post}}
-      {{> genre-details}}
-      {{/each}}
-      {{else}}
-       <div class="welcome_box">
-        <p>Welcome! Select a genre to browse!</p>
-      </div>
-    {{/if}} 
+    <div class="card" style="width: 20rem;">
+  <form>
+    <input type="text" name="Post" id="postText" />
+    <button>Post!</button>
+  </form>
+</div>
     </main>
     <footer class="main_footer">
       Made by Kai Gerstley, Sage Grayson, Chris Insignares, Ami Asokumar, James

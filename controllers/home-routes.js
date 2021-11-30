@@ -71,4 +71,10 @@ router.get("/home/:genre_id", withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
+//renders addpost page
+router.get("/post", withAuth, async (req, res) => {
+  res.render("postpage", {
+    loggedIn: req.session.loggedIn,
+  });
+});
 module.exports = router;
