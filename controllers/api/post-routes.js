@@ -2,7 +2,7 @@ const router = require("express").Router();
 const { Post, Genre, User } = require("../../models");
 const withAuth = require("../../utils/auth.js");
 
-//The '/api/post' endpoint
+//The '/api/posts' endpoint
 
 //api/posts/all - gets all posts as json
 router.get("/all", async (req, res) => {
