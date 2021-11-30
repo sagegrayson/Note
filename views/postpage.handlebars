@@ -1,0 +1,37 @@
+ {{!-- Home page that will be displayed when the user is signed in. Will display all the posts related to a genre when the genre is clicked. --}}
+ <body class="main_body">
+    <header class="main_header"><h1>Note</h1></header>
+    <nav id="side_bar">
+      <div>
+        {{!-- When the button for a genre is clicked, will use the appropriate route to fetch the data associated with that genre --}}
+        <button onclick="window.location.href='/home'"class="side_btns" id="active_btn">
+          <p class="btn_txt">Pop</p>
+        </button>
+      </div>
+      <div>
+        <button onclick="window.location.href='/home/2'" class="side_btns"><p id="rap"class="btn_txt">Rap</p></button>
+      </div>
+      <div>
+        <button onclick="window.location.href='/home/1'"class="side_btns"><p id="rock"class="btn_txt">Rock</p></button>
+      </div>
+      <div>
+        <button onclick="window.location.href='/home/3'"class="side_btns"><p id="country"class="btn_txt">Country</p></button>
+      </div>
+      <div>
+        <button onclick="window.location.href='/home/4'" class="side_btns"><p id="folk"class="btn_txt">Folk</p></button>
+      </div>
+      <div><button onclick="window.location.href='/post'" class="side_btns" id="plus_btn">+</button></div>
+    </nav>
+    <main>
+    <div class="card" style="width: 20rem;">
+  <form class="form-post">
+    <input type="text" name="Post" id="postText" />
+    <button class="btn btn-lg btn-primary btn-block" type="submit" id="start-button">Post!</button>
+  </form>
+</div>
+    </main>
+    <footer class="main_footer">
+      Made by Kai Gerstley, Sage Grayson, Chris Insignares, Ami Asokumar, James
+      Sgerella.
+    </footer>
+    <script src="/js/post.js"></script>
