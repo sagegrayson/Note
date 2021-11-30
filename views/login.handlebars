@@ -1,43 +1,56 @@
-{{! Login Box }}
-<div class="row justify-space-between-md">
-  <div class="login-card">
-    <h2 class="page-title">Login</h2>
-    <form class="form login-form">
-      <div class="form-group">
-        <label for="email-login">Email:</label>
-        <input class="form-input" type="text" id="email-login" />
-      </div>
-      <div class="form-group">
-        <label for="password-login">Password:</label>
-        <input class="form-input" type="password" id="password-login" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">login</button>
-      </div>
-    </form>
-  </div>
-
-  {{! Sign up Box }}
-  <div class="login-card">
-    <h2 class="page-title">Signup</h2>
-    <form class="form signup-form">
-      <div class="form-group">
-        <label for="username-signup">Username:</label>
-        <input class="form-input" type="text" id="username-signup" />
-      </div>
-      <div class="form-group">
-        <label for="email-signup">Email:</label>
-        <input class="form-input" type="text" id="email-signup" />
-      </div>
-      <div class="form-group">
-        <label for="password-signup">Password:</label>
-        <input class="form-input" type="password" id="password-signup" />
-      </div>
-      <div class="form-group">
-        <button class="btn btn-primary" type="submit">signup</button>
-      </div>
-    </form>
-  </div>
-</div>
-
-<script src="./js/login.js"></script>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
+	<div class="container-fluid">
+		<a class="navbar-brand me-auto" href="./">Note</a>
+		<div class="d-flex">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link" href="./create">Create Account</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<main class="text-center" id="main">
+	<div
+		class="d-flex flex-column min-vh-100 justify-content-center align-items-center"
+	>
+		<body class="text-center">
+			<form class="form-signin">
+				<h1 class="h3 mb-3 font-weight-normal">Sign In</h1>
+				<input
+					type="email"
+					id="inputEmail"
+					class="h3 form-control"
+					placeholder="Email address"
+					autofocus=""
+				/>
+				<input
+					type="password"
+					id="inputPassword"
+					class="h3 form-control"
+					placeholder="Password"
+				/>
+				<div class="checkbox mb-3">
+					<label>
+						<input type="checkbox" value="remember-me" />
+						Remember Me
+					</label>
+				</div>
+				<button
+					class="btn btn-lg btn-primary btn-block"
+					type="submit"
+					id="start-button"
+				>
+					Go
+				</button>
+			</form>
+		</body>
+	</div>
+</main>
+<footer class="footer py-3 text-center" id="footer">
+	<p>
+		Ami Asokumar - Chris Insignares - James Sgerella - Kai Gerstley - Sage
+		Grayson
+	</p>
+	<a id="footer" href="https://github.com/sagegrayson/Note">Github</a>
+</footer>
