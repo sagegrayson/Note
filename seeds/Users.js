@@ -4,24 +4,22 @@ const userData = [
   {
     username: "James Sgarella",
     email: "James@email.com",
-    password: "Password1234",
+    password: "moomoo",
   },
   {
     username: "Sage Grayson",
     email: " Sage@email.com",
-    password: "ThePassword123",
+    password: "moomoo",
   },
   {
     username: "Chris Insignares",
     email: "Chris@email.com",
-    password: "AnotherPassword123",
+    password: "moomoo",
   },
   {
     username: "Ami Asokumar",
     email: "Ami@email.com",
-    password: "ABrilliantPassword123",
-    instrument_id: "",
-    friendship_id: "",
+    password: "moomoo",
   },
 ];
 
