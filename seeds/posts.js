@@ -11,17 +11,17 @@ const postData = [
     user_id: 1,
   },
   {
-    post_text: "Freddie Mercury is the best!",
+    post_text: "Freddie Mercury is the GOAT",
     genre_id: 1,
     user_id: 4,
   },
   {
-    post_text: "Mac Miller was so sick",
+    post_text: "Mac Miller was so sick #ripskinnylegend",
     genre_id: 2,
     user_id: 2,
   },
   {
-    post_text: "Lil Nas X never misses!",
+    post_text: "Lil Nas X literally never misses",
     genre_id: 3,
     user_id: 3,
   },
@@ -31,7 +31,7 @@ const postData = [
     user_id: 3,
   },
   {
-    post_text: "Doja Cat goes off so hard!",
+    post_text: "Doja Cat is so crazy but ngl, her music goes off so hard",
     genre_id: 5,
     user_id: 4,
   },
