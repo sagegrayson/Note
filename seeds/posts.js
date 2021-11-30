@@ -32,7 +32,7 @@ const postData = [
   },
   {
     post_text: "Doja Cat goes off so hard!",
-    genre_id: 1,
+    genre_id: 5,
     user_id: 4,
   },
 ];

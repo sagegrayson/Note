@@ -84,6 +84,7 @@
   margin: 5px;
   border-color: var(--navy);
   border: 2px solid var(--navy);
+  padding: 2px;
 }
 
 /* Used */
@@ -126,6 +127,4 @@
   width: 100%;
   color: var(--light);
   text-align: center;
-}
-.posts {
 }
