@@ -1,3 +1,4 @@
+ {{!-- Home page that will be displayed when the user is signed in. Will display all the posts related to a genre when the genre is clicked. --}}
  <body class="main_body">
     <header class="main_header"><h1>Note</h1></header>
     <nav id="side_bar">
@@ -21,6 +22,7 @@
       <div><button class="side_btns" id="plus_btn">+</button></div>
     </nav>
     <main>
+      {{!-- Will render a card for each post if there is at least 1 post passed in from the database --}}
       {{#if post}}
       {{#each post}}
       {{> genre-details}}
