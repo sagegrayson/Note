@@ -20,7 +20,7 @@ router.get("/all", async (req, res) => {
 module.exports = router;
 
 //api/users/create - creates a new user in database
-router.post("/post", async (req, res) => {
+router.post("/create", async (req, res) => {
   try {
     const userData = await User.create({
       username: req.body.username,
