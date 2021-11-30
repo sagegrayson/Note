@@ -3,7 +3,6 @@ const { Post, Genre, User } = require("../../models");
 const withAuth = require("../../utils/auth.js");
 
 //The '/api/posts' endpoint
-<<<<<<< HEAD
 router.post("/create", async (req, res) => {
   try {
     const postData = await Post.create({
@@ -13,9 +12,7 @@ router.post("/create", async (req, res) => {
 
     req.session.save(() => {
       req.session.loggedIn = true;
-=======
-//Includes a get route for all posts
->>>>>>> main
+      //Includes a get route for all posts
 
       res.status(200).json(postData);
     });
