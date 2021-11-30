@@ -122,10 +122,14 @@
 }
 
 #home_footer {
-  background-color: var(--navy);
+  background-color: #212529;
   position: absolute;
   bottom: -90;
   width: 100%;
   color: var(--light);
   text-align: center;
+}
+
+#home_footer p {
+  font-size: 20px;
 }
